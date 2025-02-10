@@ -1,0 +1,29 @@
+version: 0.1
+
+endpoints:
+  - name: Products
+    port: 8080
+    type: REST
+    context: /products
+    schemaFilePath: openapi/products.yaml
+    security:
+      oauth2:
+        required: true
+
+  - name: Users
+    port: 8081
+    type: REST
+    context: /users
+    schemaFilePath: openapi/users.yaml
+    security:
+      oauth2:
+        required: true
+
+  - name: Transactions
+    port: 8082
+    type: REST
+    context: /transactions
+    schemaFilePath: openapi/transactions.yaml
+    security:
+      oauth2:
+        required: true

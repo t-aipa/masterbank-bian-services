@@ -21,6 +21,48 @@ components:
       tracing: true
       logging: true
 
+  - name: user-profile-service
+    source:
+      language: bal
+      path: user_profile_service.bal
+    build:
+      target: bal
+    deploy:
+      type: api
+      spec:
+        openapi: 3.0.0
+        info:
+          title: User Profile API
+          version: 1.0.0
+      security:
+        - oauth2:
+            scopes: ["users.read", "users.write"]
+    observability:
+      metrics: true
+      tracing: true
+      logging: true
+
+  - name: transaction-service
+    source:
+      language: bal
+      path: transaction_service.bal
+    build:
+      target: bal
+    deploy:
+      type: api
+      spec:
+        openapi: 3.0.0
+        info:
+          title: Transaction API
+          version: 1.0.0
+      security:
+        - oauth2:
+            scopes: ["transactions.read", "transactions.write"]
+    observability:
+      metrics: true
+      tracing: true
+      logging: true
+
 environment:
   - name: dev
     variables:

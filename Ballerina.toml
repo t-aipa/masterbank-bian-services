@@ -14,10 +14,80 @@ version = "2.10.0"
 
 [[dependency]]
 org = "ballerina"
+name = "io"
+version = "1.6.3"
+
+[[dependency]]
+org = "ballerina"
 name = "log"
 version = "2.9.0"
 
 [[dependency]]
 org = "ballerina"
+name = "observe"
+version = "1.2.3"
+
+[[dependency]]
+org = "ballerina"
 name = "time"
 version = "2.4.0"
+
+[[dependency]]
+org = "ballerina"
+name = "url"
+version = "2.4.0"
+
+[[dependency]]
+org = "ballerina"
+name = "mime"
+version = "2.9.0"
+
+[[dependency]]
+org = "ballerina"
+name = "jwt"
+version = "2.10.0"
+
+[[dependency]]
+org = "ballerina"
+name = "oauth2"
+version = "2.10.0"
+
+[[dependency]]
+org = "ballerina"
+name = "cache"
+version = "3.7.1"
+
+[[dependency]]
+org = "ballerina"
+name = "crypto"
+version = "2.5.0"
+
+[[dependency]]
+org = "ballerina"
+name = "file"
+version = "1.9.0"
+
+[[dependency]]
+org = "ballerina"
+name = "os"
+version = "1.8.0"
+
+[[dependency]]
+org = "ballerina"
+name = "task"
+version = "2.5.0"
+
+[[dependency]]
+org = "ballerina"
+name = "constraint"
+version = "1.4.0"
+
+[[dependency]]
+org = "ballerina"
+name = "auth"
+version = "2.10.0"
+
+[[dependency]]
+org = "ballerina"
+name = "cloud"
+version = "2.11.4"

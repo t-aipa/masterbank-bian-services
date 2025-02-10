@@ -1,0 +1,43 @@
+version: 1.0
+components:
+  - name: products-service
+    source:
+      language: bal
+      path: products_service.bal
+    build:
+      target: bal
+    deploy:
+      type: api
+      spec:
+        openapi: 3.0.0
+        info:
+          title: Products API
+          version: 1.0.0
+      security:
+        - oauth2:
+            scopes: ["products.read", "products.write"]
+    observability:
+      metrics: true
+      tracing: true
+      logging: true
+
+environment:
+  - name: dev
+    variables:
+      - name: servicePath
+        value: products
+      - name: servicePort
+        value: "8080"
+  - name: prod
+    variables:
+      - name: servicePath
+        value: products
+      - name: servicePort
+        value: "8080"
+
+security:
+  authentication:
+    type: oauth2
+    config:
+      issuer: https://sts.choreo.dev
+      audience: masterbank-bian-services

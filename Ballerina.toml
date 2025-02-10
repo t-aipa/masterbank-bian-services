@@ -2,7 +2,6 @@
 org = "masterbank"
 name = "bian_services"
 version = "0.1.0"
-distribution = "2201.8.4"
 
 [build-options]
 observabilityIncluded = true
@@ -11,6 +10,21 @@ observabilityIncluded = true
 org = "ballerina"
 name = "http"
 version = "2.10.0"
+
+[[dependency]]
+org = "ballerina"
+name = "log"
+version = "2.9.0"
+
+[[dependency]]
+org = "ballerina"
+name = "io"
+version = "1.6.3"
+
+[[dependency]]
+org = "ballerina"
+name = "observe"
+version = "1.2.3"
 
 [[dependency]]
 org = "ballerina"
@@ -41,21 +55,6 @@ version = "1.9.0"
 org = "ballerina"
 name = "os"
 version = "1.8.0"
-
-[[dependency]]
-org = "ballerina"
-name = "io"
-version = "1.6.3"
-
-[[dependency]]
-org = "ballerina"
-name = "log"
-version = "2.9.0"
-
-[[dependency]]
-org = "ballerina"
-name = "observe"
-version = "1.2.3"
 
 [[dependency]]
 org = "ballerina"

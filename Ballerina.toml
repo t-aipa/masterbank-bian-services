@@ -14,23 +14,8 @@ version = "2.10.0"
 
 [[dependency]]
 org = "ballerina"
-name = "io"
-version = "1.6.3"
-
-[[dependency]]
-org = "ballerina"
-name = "log"
-version = "2.9.0"
-
-[[dependency]]
-org = "ballerina"
-name = "observe"
-version = "1.2.3"
-
-[[dependency]]
-org = "ballerina"
-name = "time"
-version = "2.4.0"
+name = "oauth2"
+version = "2.10.0"
 
 [[dependency]]
 org = "ballerina"
@@ -49,21 +34,6 @@ version = "2.10.0"
 
 [[dependency]]
 org = "ballerina"
-name = "oauth2"
-version = "2.10.0"
-
-[[dependency]]
-org = "ballerina"
-name = "cache"
-version = "3.7.1"
-
-[[dependency]]
-org = "ballerina"
-name = "crypto"
-version = "2.5.0"
-
-[[dependency]]
-org = "ballerina"
 name = "file"
 version = "1.9.0"
 
@@ -71,6 +41,31 @@ version = "1.9.0"
 org = "ballerina"
 name = "os"
 version = "1.8.0"
+
+[[dependency]]
+org = "ballerina"
+name = "io"
+version = "1.6.3"
+
+[[dependency]]
+org = "ballerina"
+name = "log"
+version = "2.9.0"
+
+[[dependency]]
+org = "ballerina"
+name = "observe"
+version = "1.2.3"
+
+[[dependency]]
+org = "ballerina"
+name = "cloud"
+version = "2.11.4"
+
+[[dependency]]
+org = "ballerina"
+name = "cache"
+version = "3.7.1"
 
 [[dependency]]
 org = "ballerina"
@@ -89,5 +84,10 @@ version = "2.10.0"
 
 [[dependency]]
 org = "ballerina"
-name = "cloud"
-version = "2.11.4"
+name = "crypto"
+version = "2.5.0"
+
+[[dependency]]
+org = "ballerina"
+name = "time"
+version = "2.4.0"

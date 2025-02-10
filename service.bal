@@ -1,8 +1,12 @@
 import ballerina/http;
 
-service / on new http:Listener(8080) {
+// Service configuration
+configurable int servicePort = 8080;
+
+// RESTful service
+service / on new http:Listener(servicePort) {
     // Products Service
-    resource function get products() returns json|error {
+    resource function get products() returns json {
         return {
             "products": [
                 {
@@ -16,7 +20,7 @@ service / on new http:Listener(8080) {
     }
 
     // Users Service
-    resource function get users/[string userId]() returns json|error {
+    resource function get users/[string userId]() returns json {
         return {
             "id": userId,
             "name": "John Smith",
@@ -26,7 +30,7 @@ service / on new http:Listener(8080) {
     }
 
     // Transactions Service
-    resource function get transactions/[string userId]() returns json|error {
+    resource function get transactions/[string userId]() returns json {
         return {
             "transactions": [
                 {

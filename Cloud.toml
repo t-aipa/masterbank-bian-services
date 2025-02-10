@@ -19,6 +19,12 @@ memory_percentage=80
 region="us-east-1"
 organization="masterbank"
 
-[build.ballerina]
+[ballerina.build]
 repository="central.ballerina.io"
-use_project_repository=true
+observability=true
+
+[container.config]
+config_file="Config.toml"
+
+[Config.toml]
+servicePort=8080

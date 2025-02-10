@@ -1,6 +1,6 @@
 [container.image]
-repository="masterbank"
-name="bian-services"
+repository="choreocontrolplane.azurecr.io"
+name="masterbank-bian-services"
 tag="0.1.0"
 
 [cloud.deployment]
@@ -15,25 +15,10 @@ max_replicas=3
 cpu_percentage=80
 memory_percentage=80
 
-[cloud.deployment.probes]
-liveness_probe.port=8080
-readiness_probe.port=8080
-
 [cloud.config]
-config_maps=[
-    {
-        name="api-config",
-        mount_path="/config",
-        data=[
-            {
-                key="config.json",
-                value="""
-                {
-                    "api_version": "v1",
-                    "environment": "production"
-                }
-                """
-            }
-        ]
-    }
-]
+region="us-east-1"
+organization="masterbank"
+
+[build.ballerina]
+repository="central.ballerina.io"
+use_project_repository=true
